@@ -19,9 +19,9 @@ Installation &amp; Management Docs of CS
 	* 常见问题 [-> hy-faq][6]
 
 ---
-[1]: (https://raw.github.com/hy-cloud/csdoc/master/design.md) "design.md"
-[2]: (https://raw.github.com/hy-cloud/csdoc/master/deployment.md) "deployment.md"
-[3]: (https://raw.github.com/hy-cloud/csdoc/master/maintenance.md) "maintenance.md"
-[4]: (https://raw.github.com/hy-cloud/csdoc/master/hy-deployment.md) "hy-deployment.md"
-[5]: (https://raw.github.com/hy-cloud/csdoc/master/hy-usage.md) "hy-usage.md"
-[6]: (https://raw.github.com/hy-cloud/csdoc/master/hy-faq.md) "hy-faq.md"
+[1]: (https://github.com/hy-cloud/csdoc/blob/master/design.md) "design.md"
+[2]: (https://github.com/hy-cloud/csdoc/blob/master/deployment.md) "deployment.md"
+[3]: (https://github.com/hy-cloud/csdoc/blob/master/maintenance.md) "maintenance.md"
+[4]: (https://github.com/hy-cloud/csdoc/blob/master/hy-deployment.md) "hy-deployment.md"
+[5]: (https://github.com/hy-cloud/csdoc/blob/master/hy-usage.md) "hy-usage.md"
+[6]: (https://github.com/hy-cloud/csdoc/blob/master/hy-faq.md) "hy-faq.md"
