@@ -19,9 +19,9 @@ Installation &amp; Management Docs of CS
 	* 常见问题 [-> hy-faq][6]
 
 ---
-[1]: (design.md) "design.md"
-[2]: (deployment.md) "deployment.md"
-[3]: (maintenance.md) "maintenance.md"
-[4]: (hy-deployment.md) "hy-deployment.md"
-[5]: (hy-usage.md) "hy-usage.md"
-[6]: (hy-faq.md) "hy-faq.md"
+[1]: design.md "design.md"
+[2]: deployment.md "deployment.md"
+[3]: maintenance.md "maintenance.md"
+[4]: hy-deployment.md "hy-deployment.md"
+[5]: hy-usage.md "hy-usage.md"
+[6]: hy-faq.md "hy-faq.md"
