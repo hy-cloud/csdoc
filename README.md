@@ -26,4 +26,4 @@ Installation &amp; Management Docs of CS
 [5]: hy-usage.md "hy-usage.md"
 [6]: hy-faq.md "hy-faq.md"
 
-[![Analytics](https://ga-beacon.appspot.com/UA-69961735-2/hy-cloud/csdoc)](https://github.com/igrigorik/ga-beacon)
+[![Analytics](https://ga-beacon.appspot.com/UA-69961735-2/hy-cloud/csdoc)](https://github.com/igrigorik/ga-beacon?pixel)
