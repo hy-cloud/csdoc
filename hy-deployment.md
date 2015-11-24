@@ -1,0 +1,12 @@
+﻿# 初始化Cloudstack
+## 查看Cloudstack状态并启动
+## 设置Cloudstack开机启动
+# 初始化MySQL及Cloudstack的部分数据库
+## 查看MySQL状态并启动
+## 设置MySQL开机启动
+## 初始化Cloudstack所需的数据库
+# 部署Tomcat及汇云应用
+## 上传Tomcat及应用包
+## 初始化汇云所需数据库
+## 启动汇云
+## 设置汇云开机启动
