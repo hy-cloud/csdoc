@@ -28,3 +28,18 @@ uuid=$(xe vm-install template=CentOS\ 6\ \(64-bit\) new-name-label=CentOSNEW)
  xe vif-create vm-uuid=${uuid} network-uuid=43347e81-0816-5c8f-c972-8832b5884b0d mac=random device=0
  xe vm-start uuid=${uuid}
 ```
+
+## XenServer VM platform Options
+```
+platform: {
+  'pae': 'true',
+  'nx': 'true',
+  'viridian': 'true',
+  'apic': 'true'
+}
+```
+
+pae: 物理地址扩展,PAE支持32位处理器可以访问4GB以上物理内存功能版本的Windows，并且它是NX的先决条件。
+NX: 可让处理器帮助保护电脑免受恶意软件的攻击。
+APIC:（Advanced Programmable Interrupt Control）高级可编程中断控制器
+ACPI: Advanced Configuration and Power Interface
