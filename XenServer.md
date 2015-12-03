@@ -43,3 +43,12 @@ platform: {
   - NX: 可让处理器帮助保护电脑免受恶意软件的攻击。
   - APIC:（Advanced Programmable Interrupt Control）高级可编程中断控制器
   - ACPI: Advanced Configuration and Power Interface
+
+### Boot a Guest vm from CD or DVD in Xenserver
+```
+  xe vm-param-set HVM-boot-policy="BIOS order" uuid=[uuid of your vm]
+```
+启动安装完成之后， 更改回来：
+```
+xe vm-param-set HVM-boot-policy="" uuid=[uuid of your vm]
+```
