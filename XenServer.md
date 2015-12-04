@@ -14,7 +14,7 @@ LVM-Base 的 Sr 主要有 lvm, lvmoiscsi, lvmohba 几种
 ## Create VM using CLI
 
 ```
-uuid=$(xe vm-install template=CentOS\ 6\ \(64-bit\) new-name-label=CentOSNEW)
+ uuid=$(xe vm-install template=CentOS\ 6\ \(64-bit\) new-name-label=CentOSNEW)
  vbd-uuid=$(xe vbd-list vm-uuid=${uuid} userdevice=0 params=uuid --minimal)
  
  xe vm-cd-add vm=CentOSNEW cd-name=CentOS-6.5-x86_64-minimal.iso device=3
@@ -35,7 +35,8 @@ platform: {
   'pae': 'true',
   'nx': 'true',
   'viridian': 'true',
-  'apic': 'true'
+  'apic': 'true',
+  'acpi': 'true'
 }
 ```
 
@@ -43,8 +44,11 @@ platform: {
   - NX: 可让处理器帮助保护电脑免受恶意软件的攻击。
   - APIC:（Advanced Programmable Interrupt Control）高级可编程中断控制器
   - ACPI: Advanced Configuration and Power Interface
+  - viridian: 是Windows 的一个特性， 安装windows 是启用该选项
 
-### Boot a Guest vm from CD or DVD in Xenserver
+### XenServer HVM 的引导顺序
+XenServer HVM 虚拟机使用 BIOS　定义的引导顺序进行引导
+
 ```
   xe vm-param-set HVM-boot-policy="BIOS order" uuid=[uuid of your vm]
 ```
