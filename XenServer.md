@@ -66,3 +66,10 @@ vm_rec = {
 }
 ```
 这样虚拟机就可以从CD-ROM 中启动， 安装虚拟机之后，可以从磁盘启动。
+
+### XenServer 日志
+XenServer 的日志在 /var/log 目录下
+- xensource.log xensource.log 日志是由 xapi 记录的
+- SMlog : 存储相关操作的日志
+- xenstored-access.log: 操作 xenstore 的相关日志
+- xcp-rrdd-plugins.log： 性能收集日志
