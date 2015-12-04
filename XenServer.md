@@ -48,7 +48,8 @@ platform: {
 
 ### XenServer HVM 的引导顺序
 XenServer HVM 虚拟机使用 BIOS　定义的引导顺序进行引导
-
+boot on floppy (a), hard disk (c), Network (n) or CD-ROM (d)
+default: hard disk, cd-rom, floppy
 ```
   xe vm-param-set HVM-boot-policy="BIOS order" uuid=[uuid of your vm]
 ```
@@ -56,3 +57,12 @@ XenServer HVM 虚拟机使用 BIOS　定义的引导顺序进行引导
 ```
 xe vm-param-set HVM-boot-policy="" uuid=[uuid of your vm]
 ```
+
+在使用XenAPI 创建虚拟机时， 要指定引导策略和引导顺序
+```
+vm_rec = {
+  HVM_boot_plicy: 'BIOS order',
+  HVM_boot_params : { 'order': 'dc'  }
+}
+```
+这样虚拟机就可以从CD-ROM 中启动， 安装虚拟机之后，可以从磁盘启动。
