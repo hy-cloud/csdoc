@@ -67,6 +67,16 @@ vm_rec = {
 ```
 这样虚拟机就可以从CD-ROM 中启动， 安装虚拟机之后，可以从磁盘启动。
 
+使用模板创建虚拟机时， 是直接从硬盘引导，这个时候设置 HVM_boot_policy 和 HVM_boot_params为上面的值会导致引导失败，系统进入启动画面，但引导失败。
+这个时候应按照下面的方式设置：
+```
+  vm_rec = {
+    HVM_boot_policy : '',
+    HVM_boot_params: {}
+    PV_bootloader: 'pygrub'
+  }
+```
+
 ### XenServer 日志
 XenServer 的日志在 /var/log 目录下
 - xensource.log xensource.log 日志是由 xapi 记录的
