@@ -1,0 +1,10 @@
+##Clvm
+
+### 1 Clvm 的架构
+![pic](pic/clvm.png)
+
+### 2. 安装 Clvm
+
+```
+  yum install cman rgmanager lvm2-cluster
+```
