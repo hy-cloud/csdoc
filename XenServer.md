@@ -141,3 +141,24 @@ vhd 文件： /root/Centos-6.5.vhd
       vhd-util modify -s $psize -n /dev/VG_XenStorage-$sruuid/VHD-$uuid
     ```
   
+### Create Iscsi SR
+```
+  xe sr-create \
+    host-uuid='73c19b5e-1e0c-47ed-832c-d2a0898482ff' \
+    content-type=user \
+    name-label='iscsi-storage' \
+    shared=true  device-config:target=192.168.10.131 \
+    device-config:targetIQN='iqn.2015-12.com.xuanyuan:cryptvolume1' \
+    device-config:SCSIid=1IET_00010001 \
+    type=lvmoiscsi
+```
+注意：SCSIid: 1IET_00010001 其中： 1 是指 lun id , IET_0001001 是 iscsi-target 显示信息中 SCSI ID :  IET         00010001
+
+```
+  LUN: 1
+            Type: disk
+            SCSI ID: IET     00010001
+            SCSI SN: beaf11
+
+```
+
