@@ -10,7 +10,7 @@
   yum install cman rgmanager lvm2-cluster
 ```
 cman : 是一个集群管理工具
-lvm2-cluster: lvm clustr 
+lvm2-cluster: lvm cluster
 
 
 ### 3. 配置 Clvm
