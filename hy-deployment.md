@@ -1,12 +1,39 @@
-﻿# 初始化Cloudstack
-## 查看Cloudstack状态并启动
-## 设置Cloudstack开机启动
-# 初始化MySQL及Cloudstack的部分数据库
-## 查看MySQL状态并启动
-## 设置MySQL开机启动
-## 初始化Cloudstack所需的数据库
-# 部署Tomcat及汇云应用
-## 上传Tomcat及应用包
-## 初始化汇云所需数据库
-## 启动汇云
-## 设置汇云开机启动
+## 1. 安装前提条件
+>  i. 检查CloudStack是否安装成功。
+> 
+> ii. 检查汇云安装包是否完整。
+
+	1) 查看Cloudstack安装状态及运行情况：
+	
+	2) 设置Cloudstack开机启动
+
+## 2. 数据库初始化
+
+### a. 数据库创建
+	1) 使用ROOT权限登陆MYSQL服务器：
+	
+	2) 创建并还原cloud_front和urms数据库：
+	 
+	3) cloud帐号赋权：
+	
+### b. 设置MySQL开机启动
+### c. 连接测试
+
+## 3. 汇云应用部署
+### a. 建立应用根目录
+	1）mkdir -p /usr/hycloud
+	2）...
+### b. 参数设置
+	1）cd /usr/hycloud/cloud/...
+	2）vi ...
+### c. 启动和停止
+### d. 查看日志
+### e. 设置汇云开机启动
+
+## 4. 数据中心初始化
+
+### a. 系统登陆
+### b. 调用数据中心初始化向导
+	1) ...
+	2) ...
+	3) ...
