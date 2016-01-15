@@ -1,7 +1,7 @@
-#整个过程概述
+# 整个过程概述
 该安装手册建设在CentOS6.5使用Xenserver一个云的cloudstack，做这一切在两个两个联想的RD640服务器（一台管理节点CentOS6.5系统和一台计算节点Xenserver6.2.0版本）上实现。Xenserver是一种虚拟化技术，主机的CPU处理器需支持硬件虚拟化扩展。
 
-###先决条件
+### 先决条件
 ```
 完成这个操作手册需要以下条件：
 1、至少一台服务器（XenServer节点）支持开启硬件虚拟化
@@ -25,6 +25,7 @@ IP：192.168.21.10
 ```
 # vi /etc/sysconfig/network-scripts/ifcfg-eth0
 ```
+
 ```
 DEVICE=eth0
 HWADDR=52:54:00:B9:A6:C0
